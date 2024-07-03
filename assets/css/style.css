@@ -87,6 +87,7 @@ header p {
 
 .moodboard {
   height: 100vh;
+  margin-top: 15rem;
 }
 
 .moodboard img {
@@ -98,6 +99,7 @@ header p {
   display: flex;
   flex-direction: column;
   padding: 1rem 18rem;
+  height: 100vh;
 }
 
 .idea2 {
@@ -124,7 +126,7 @@ span {
   line-height: 2.5rem;
 }
 
-.idea div:nth-of-type(2) {
+.idea > div:nth-of-type(2) {
   display: flex;
   align-items: flex-start;
 }
@@ -138,9 +140,183 @@ span {
 
 .action {
   display: flex;
+  justify-content: space-around;
+  margin-top: 10rem;
+}
+.action div:nth-of-type(1) {
+  margin-right: 10rem;
+}
+.action div h3 {
+  font-family: "RobotoBold";
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-right: 28rem;
+}
+
+.action div p {
+  line-height: 2rem;
+  width: 19rem;
+  margin-bottom: 5rem;
+}
+
+.action h3::before {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: -3rem;
+  padding-right: 1rem;
+}
+
+.action div:nth-of-type(1) h3:nth-of-type(1)::before {
+  content: url(../img/title02.svg);
+}
+.action div:nth-of-type(1) h3:nth-of-type(2)::before {
+  content: url(../img/title01.svg);
+}
+
+.action div:nth-of-type(2) h3:nth-of-type(1)::before {
+  content: url(../img/title04.svg);
+}
+.action div:nth-of-type(2) h3:nth-of-type(2)::before {
+  content: url(../img/title03.svg);
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.call p:nth-of-type(1) {
+  font-family: "RobotoBold";
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.call p:nth-of-type(2) {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  width: 35rem;
+  text-align: center;
 }
 
 .grid-parent {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  margin: 10rem 30rem;
+  column-gap: 5rem;
+  row-gap: 10rem;
+}
+
+.grid-parent div {
+  height: 25rem;
+}
+
+.grid-parent div > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-parent .svg {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.grid-parent div p:nth-of-type(1) {
+  font-family: "RobotoBold";
+  font-size: 3.25rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.grid-parent div h2 {
+  font-family: "RobotoBold";
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.grid-parent div p:nth-of-type(2) {
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 40rem;
+}
+
+.grid-parent div:nth-of-type(4),
+.grid-parent div:nth-of-type(8) {
+  justify-self: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "RobotoBold";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 25rem;
+  margin-bottom: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40rem;
+  height: 5rem;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  align-self: center;
+  border: none;
+  box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.107);
+  border-radius: 0.25rem;
+}
+
+input[type="submit"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 16rem;
+  height: 4rem;
+  text-align: center;
+  box-sizing: border-box;
+  align-self: center;
+  background-color: #ff3571;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+  margin-bottom: 13rem;
+}
+
+#create {
+  position: relative;
+  left: -57rem;
+  bottom: 0;
+}
+
+.animacion {
+  position: absolute;
+  right: -20rem;
+  top: -100rem;
+  animation: fall 2s linear infinite alternate;
+}
+
+@keyframes fall {
+  form {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
 }
