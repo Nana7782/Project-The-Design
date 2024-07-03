@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "RobotoThin";
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "RobotoThin";
+  font-size: 62.5%;
+}
+
+body {
+  /* max-width: 100vw; */
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "RobotoBold";
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+a {
+  font-family: "RobotoBold";
+  text-decoration: none;
+  color: #ff3571;
+  font-size: 1.4rem;
+}
+.logo {
+  position: fixed;
+  padding: 2rem 4rem;
+}
+.logo img {
+  width: 3rem;
+  height: 3em;
+}
+header {
+  height: 100svh;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font-size: 1.8rem;
+}
+
+.header_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0 17rem 9rem;
+}
+.header_text div:nth-of-type(2) {
+  padding-left: 5rem;
+}
+.header_text div:nth-of-type(1) p:nth-of-type(1) {
+  font-family: "RobotoBold";
+  font-size: 2rem;
+}
+.header_text div:nth-of-type(1) p:nth-of-type(2) {
+  font-size: 1rem;
+}
+.header_text div:nth-of-type(2) p {
+  line-height: 3rem;
+  margin-bottom: 4rem;
+}
+
+.header_img {
+  width: 60%;
+}
+.header_img img {
+  width: 100%;
+}
+
+.moodboard {
+  height: 100vh;
+}
+
+.moodboard img {
+  height: 75%;
+  width: 100%;
+}
+
+.idea {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 18rem;
+}
+
+.idea2 {
+  display: flex;
+}
+
+.idea2 h2 {
+  width: 25rem;
+  font-family: "RobotoBold";
+  font-size: 4rem;
+  margin-right: 17rem;
+}
+
+span {
+  background: url(../img/idea.png);
+  background-size: cover;
+  width: 5rem;
+  height: 6rem;
+  display: inline-block;
+}
+.idea2 p {
+  width: 60rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.idea div:nth-of-type(2) {
+  display: flex;
+  align-items: flex-start;
+}
+
+.idea div:nth-of-type(2) h2 {
+  font-family: "RobotoBold";
+  font-size: 4rem;
+  padding: 0 30rem 0 5rem;
+  margin-top: 10rem;
+}
+
+.action {
+  display: flex;
+}
+
+.grid-parent {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
